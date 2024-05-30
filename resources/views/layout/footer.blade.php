@@ -4,13 +4,13 @@
         <div class="col-lg-3 col-md-6">
             <img src="{{ asset('img/404-logo.png') }}" alt="">
             <div>
-                <a class="nav-link text-light" href="#">What's On</a>
+                <a class="nav-link text-light" href="{{ route('landing') }}#about">What's On</a>
                 <br>
-                <a class="nav-link text-light" href="#">Menu</a>
+                <a class="nav-link text-light" href="{{ route('user.menu') }}">Menu</a>
                 <br>
-                <a class="nav-link text-light" href="#">Reserve a Table</a>
+                <a class="nav-link text-light" href="{{ route('landing') }}#events">Reserve a Table</a>
                 <br>
-                <a class="nav-link text-light" href="#">Contact</a>
+                <a class="nav-link text-light" href="{{ route('landing') }}#contactus">Contact</a>
             </div>
             <div class="mt-4">
                 <span class="text-light h3">Stay Connected</span>

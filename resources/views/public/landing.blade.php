@@ -4,7 +4,7 @@
     @include('layout.navbar')
     <div class="landing-page-container">
         <div id="home" class="landing-page-item">
-            @include('public.home')
+            @include('public.home', ['background' => $background])
         </div>
 
         <div id="about" class="landing-page-item container mt-5">

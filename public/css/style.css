@@ -35,6 +35,11 @@
   font-weight: normal;
   src: local("Post No Bills Jaffna ExtraBold Regular"), url("../font/PostNoBillsJaffna-ExtraBold.woff") format("woff");
 }
+body {
+  background-color: #030303;
+  color: white;
+}
+
 nav {
   background-color: #030303;
   color: white;
@@ -104,6 +109,9 @@ nav ul li a {
   height: 100%;
 }
 .video-container video {
+  width: 100%;
+}
+.video-container img {
   width: 100%;
 }
 
@@ -380,6 +388,17 @@ nav ul li a {
 .event-item {
   width: 30%;
 }
+.event-item img {
+  cursor: pointer;
+  transition: transform 1s;
+}
+.event-item:hover img:hover {
+  transform: scale(1.1);
+}
+
+.hovered {
+  filter: blur(5px);
+}
 
 .gallery {
   min-height: 50vh;
@@ -506,6 +525,194 @@ footer {
   width: 20px;
   height: 20px;
   object-fit: cover;
+}
+
+.image-box {
+  position: relative;
+  cursor: pointer;
+  transition: transform 1s;
+  aspect-ratio: 8/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-box:hover {
+  transform: scale(1.1);
+}
+.image-box .pop-up-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.image-box .pop-up-btn button {
+  height: 50px;
+  width: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+.event-image-box {
+  width: 25%;
+  aspect-ratio: 8/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.event-image-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.event-info {
+  width: 75%;
+}
+
+.booking-button {
+  background-color: #B33030;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.booking-button:hover {
+  background-color: #AC6666;
+}
+
+.event-book-image-box {
+  width: 15%;
+  aspect-ratio: 8/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.event-book-image-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.event-book-info {
+  width: 85%;
+}
+
+.select-table td {
+  width: 75px;
+  height: 75px;
+  aspect-ratio: 1/1;
+}
+.select-table td label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.display {
+  width: 25px;
+  height: 25px;
+}
+
+.booking-card {
+  background-color: #E4BD82;
+  width: 48%;
+  margin: 20px 1%;
+}
+
+.booking-card-border {
+  border-right: 15px solid black;
+}
+
+.booking-card-image {
+  width: 30%;
+  aspect-ratio: 8/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.booking-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.booking-card-content {
+  width: 70%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.pop-up {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pop-up-content {
+  background-color: #E4BD82;
+}
+
+.d-small-none {
+  display: none;
+}
+@media screen and (min-width: 375px) {
+  .d-small-none {
+    display: block;
+  }
+}
+
+.menu-card {
+  width: 18%;
+  margin: 15px 1%;
+}
+
+.menu-card-image-box {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.menu-card-image-box img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

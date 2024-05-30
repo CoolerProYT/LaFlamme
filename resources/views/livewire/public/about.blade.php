@@ -4,7 +4,7 @@
             <span class="post-no-bill header ms-4">About</span>
         </div>
         <div class="d-flex justify-content-center container col-12 about-desc" style="z-index: 2;position: relative">
-            <pre class="post-no-bill h2 col-10 text-center" style="white-space: break-spaces;overflow-y: hidden">Spark an ICG Entertainment Group creation, has rapidly expanded its vibrant nightlife presence, gaining acclaim in over 30 cities, including Shanghai, Hangzhou, Shenzhen, and more by 2023. It's set to make its international mark in cosmopolitan hubs like Singapore and London with an exciting grand debut in Kuala Lumpur scheduled for 2023, marking another milestone in its global journey.</pre>
+            <pre class="post-no-bill h2 col-10 text-center" style="white-space: break-spaces;overflow-y: hidden">{{ $about }}</pre>
         </div>
         <div class="third-box"></div>
     </div>
@@ -27,7 +27,7 @@ Spark is dedicated to crafting an authentically relaxed and immersive entertainm
                 </div>
 
                 <div class="text-center mt-5">
-                    <button class="btn btn-outline-light book-button">Book a Table</button>
+                    <a href="#events" class="btn btn-outline-light book-button">Book a Table</a>
                 </div>
             </div>
         </div>

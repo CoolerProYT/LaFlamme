@@ -10,6 +10,19 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contactus" style="white-space: nowrap">Contact Us</a></li>
             <li><a href="#location">Location</a></li>
+            @if(\Illuminate\Support\Facades\Auth::guard('web')->check())
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown">
+                        {{ \Illuminate\Support\Facades\Auth::guard('web')->user()->name }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="{{ route('user.booking') }}">Booking History</a></li>
+                        <li><a class="dropdown-item" href="{{ route('user.logout') }}">Logout</a></li>
+                    </ul>
+                </div>
+            @else
+                <li><a href="{{ route('user.login') }}" class="text-light">Login</a></li>
+            @endif
         </ul>
         <div class="d-lg-none d-flex align-items-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -25,6 +38,19 @@
             <li class="nav-item"><a href="#gallery">Gallery</a></li>
             <li class="nav-item"><a href="#contactus" style="white-space: nowrap">Contact Us</a></li>
             <li class="nav-item"><a href="#location">Location</a></li>
+            @if(\Illuminate\Support\Facades\Auth::guard('web')->check())
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown">
+                        {{ \Illuminate\Support\Facades\Auth::guard('web')->user()->name }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="{{ route('user.booking') }}">Booking History</a></li>
+                        <li><a class="dropdown-item" href="{{ route('user.logout') }}">Logout</a></li>
+                    </ul>
+                </div>
+            @else
+                <li><a href="{{ route('user.login') }}" class="text-light">Login</a></li>
+            @endif
         </ul>
     </div>
 </nav>
