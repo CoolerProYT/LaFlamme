@@ -24,16 +24,30 @@ body{
     background-color: #312525;
     padding: 0 10px;
     position: fixed;
-    width: 80px;
+    width: 60px;
+
+    @include responsive(768px){
+        width: 80px;
+    }
 
     img{
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
+
+        @include responsive(768px){
+            width: 50px;
+            height: 50px;
+        }
     }
 }
 .content{
-    margin-left: 80px;
-    width: calc(100% - 80px);
+    margin-left: 60px;
+    width: calc(100% - 60px);
+
+    @include responsive(768px){
+        margin-left: 80px;
+        width: calc(100% - 80px);
+    }
 }
 .pointer{
     cursor: pointer;
@@ -51,8 +65,16 @@ pre{
     font-family: Arial;
 }
 .gallery-card{
-    width: 18%;
+    width: 48%;
     margin: 10px 1%;
+
+    @include responsive(768px){
+        width: 23%;
+    }
+
+    @include responsive(1024px){
+        width: 18%;
+    }
 }
 .gallery-image{
     width: 100%;
@@ -67,12 +89,16 @@ pre{
     }
 }
 .event-image-label{
-    width: 20%;
+    width: 30%;
     aspect-ratio: 8/12;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive(768px){
+        width: 20%;
+    }
 
     img{
         max-width: 100%;
@@ -97,16 +123,33 @@ pre{
     content: url("../icon/edit.svg");
 }
 .event-card{
-    width: 31%;
-    margin: 10px 1%;
+    width: 100%;
+    margin: 10px 0;
+
+    @include responsive(768px){
+        width: 48%;
+        margin: 10px 1%;
+    }
+
+    @include responsive(1440px){
+        width: 31%;
+    }
 }
 .event-image-box{
-    width: 20%;
+    width: 30%;
     aspect-ratio: 8/12;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive(768px){
+        width: 35%;
+    }
+
+    @include responsive(1600px){
+        width: 20%;
+    }
 
     img{
         max-width: 100%;
@@ -124,7 +167,12 @@ pre{
 }
 .dashboard-card{
     background-color: #E48282;
-    width: 31%;
+    width: 100%;
+    margin: 15px 0;
+
+    @include responsive(768px){
+        width: 31%;
+    }
 }
 .image-box{
     width: 100%;
@@ -139,12 +187,16 @@ pre{
     }
 }
 .menu-image-label{
-    width: 20%;
+    width: 40%;
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive(768px){
+        width: 20%;
+    }
 
     img{
         max-width: 100%;
@@ -152,12 +204,20 @@ pre{
     }
 }
 .menu-list-image-label{
-    width: 60%;
+    width: 100%;
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive(768px){
+        width: 80%;
+    }
+
+    @include responsive(1024px){
+        width: 60%;
+    }
 
     img{
         max-width: 100%;

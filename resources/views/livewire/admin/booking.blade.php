@@ -19,7 +19,7 @@
                     <th>Name</th>
                     <th>Pax</th>
                     <th>Table</th>
-                    <th>Payment (RM)</th>
+                    <th style="white-space: nowrap">Payment (RM)</th>
                     @if($flag == 'pending')
                         <th>Action</th>
                     @endif
@@ -29,8 +29,8 @@
                 @foreach($bookings as $booking)
                     <tr>
                         <td>{{ $booking->id }}</td>
-                        <td>{{ $booking->event->name }}</td>
-                        <td>{{ $booking->name }}</td>
+                        <td style="white-space: nowrap">{{ $booking->event->name }}</td>
+                        <td style="white-space: nowrap">{{ $booking->name }}</td>
                         <td>{{ $booking->pax }}</td>
                         <td>{{ $booking->table }}</td>
                         <td>{{ $booking->total_payment }}</td>

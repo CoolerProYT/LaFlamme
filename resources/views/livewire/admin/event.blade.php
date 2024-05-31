@@ -1,6 +1,6 @@
 <div>
     <div class="px-md-5 px-3 py-4">
-        <div class="d-none d-md-block" wire:ignore>
+        <div wire:ignore>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a href="{{ route('admin.event') }}" class="nav-link pointer {{ \Illuminate\Support\Facades\Route::currentRouteName() == 'admin.event' ? 'bg-light text-dark' : 'text-light' }}">All Event</a>
@@ -33,8 +33,8 @@
                             </div>
                         </div>
                         <div>
-                            <a href="{{ route('admin.event.edit', $event->id) }}" class="btn btn-primary col-3">Edit</a>
-                            <button wire:click="deleteEvent({{ $event->id }})" class="btn btn-danger ms-2 col-3">Delete</button>
+                            <a href="{{ route('admin.event.edit', $event->id) }}" class="btn btn-primary col-lg-3">Edit</a>
+                            <button wire:click="deleteEvent({{ $event->id }})" class="btn btn-danger ms-2 col-xl-3">Delete</button>
                         </div>
                     </div>
                 </div>

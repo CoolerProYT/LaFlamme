@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-    <div class="bg-dark p-3 col-3">
+    <div class="bg-dark p-3 col-lg-3 col-md-4 col-10">
         <div class="image-box">
             <img src="{{ asset('storage/public/event/'.$booking->event->image) }}" alt="">
         </div>

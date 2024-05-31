@@ -1,6 +1,18 @@
-<div class="sticky-top col-12 px-4 py-2 d-flex justify-content-between border-bottom border-dark align-items-center" style="background-color: #030303">
-    <div>
-        <span class="h1">
+<div class="sticky-top col-12 px-md-4 px-2 py-2 d-flex justify-content-between border-bottom border-dark align-items-center" style="background-color: #030303">
+    <div class="d-flex align-items-center">
+        @switch(\Illuminate\Support\Facades\Route::currentRouteName())
+            @case('admin.event.edit')
+                <a href="javascript:history.back()">
+                    <img src="{{ asset('icon/back.svg') }}">
+                </a>
+                @break
+            @case('admin.menu.edit')
+                <a href="javascript:history.back()">
+                    <img src="{{ asset('icon/back.svg') }}">
+                </a>
+                @break
+        @endswitch
+        <span class="h1 truncate m-0 p-0 ms-1">
             @switch(\Illuminate\Support\Facades\Route::currentRouteName())
                 @case('admin.dashboard')
                     Dashboard

@@ -1,4 +1,4 @@
-<div class="px-5 py-4">
+<div class="px-md-5 px-3 py-4">
     <div>
         <div class="d-flex align-items-center">
             <span class="h2">Background Image/Video</span>
@@ -48,7 +48,7 @@
                 </form>
             </div>
         @endif
-        <div class="my-4 col-6">
+        <div class="my-4 col-lg-6 col-12">
             @if($about == null)
                 <span class="{{ $edit_about ? 'd-none' : '' }}">No content added.</span>
             @else
@@ -60,8 +60,8 @@
     <div class="my-5">
         <div class="d-flex align-items-center">
             <span class="h2">Image Gallery</span>
-            <button class="edit-btn btn ms-3 {{ $edit_background ? 'd-none' : '' }}" wire:click="updateGalleryFlag(true)">Add</button>
-            <button style="width: 100px" class="btn btn-danger ms-3 {{ !$edit_background ? 'd-none' : '' }}" wire:click="updateGalleryFlag(false)">Cancel</button>
+            <button class="edit-btn btn ms-3 {{ $add_gallery ? 'd-none' : '' }}" wire:click="updateGalleryFlag(true)">Add</button>
+            <button style="width: 100px" class="btn btn-danger ms-3 {{ !$add_gallery ? 'd-none' : '' }}" wire:click="updateGalleryFlag(false)">Cancel</button>
         </div>
         @if($add_gallery)
             <div class="my-3">

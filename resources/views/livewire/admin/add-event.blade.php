@@ -1,6 +1,6 @@
 <div>
     <div class="px-md-5 px-3 py-4">
-        <div class="d-none d-md-block">
+        <div>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a href="{{ route('admin.event') }}" class="nav-link pointer {{ \Illuminate\Support\Facades\Route::currentRouteName() == 'admin.event' ? 'bg-light text-dark' : 'text-light' }}">All Event</a>
@@ -28,25 +28,25 @@
                     @error('image') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
 
-                <div class="my-3 col-6">
+                <div class="my-3 col-lg-6 col-12">
                     <label for="name" class="h4">Event Name:</label>
                     <input type="text" class="form-control" id="name" wire:model="name">
                     @error('name') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
 
-                <div class="my-3 col-6">
+                <div class="my-3 col-lg-6 col-12">
                     <label for="description" class="h4">Event Description:</label>
                     <textarea class="form-control" id="description" wire:model="description" style="min-height: 300px;max-height: 300px"></textarea>
                     @error('description') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
 
-                <div class="my-3 col-6">
+                <div class="my-3 col-lg-6 col-12">
                     <label for="date" class="h4">Event Date:</label>
                     <input type="date" class="form-control" id="date" wire:model="date" min="{{ \Carbon\Carbon::tomorrow()->format('Y-m-d') }}">
                     @error('date') <span class="text-danger">{{ $message }}</span> @enderror
                 </div>
 
-                <div class="my-3 col-6 d-flex">
+                <div class="my-3 col-lg-6 col-12 d-flex">
                     <div class="col-6 pe-3">
                         <label for="start" class="h4">Start Time:</label>
                         <input type="time" class="form-control" id="start" wire:model="start">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="my-3 col-6 d-flex">
+                <div class="my-3 col-lg-6 col-12 d-flex">
                     <div class="col-6 pe-3">
                         <label for="s_price" class="h4">S Price:</label>
                         <div class="d-flex align-items-center bg-light rounded">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="my-3 col-6 d-flex">
+                <div class="my-3 col-lg-6 col-12 d-flex">
                     <div class="col-6 pe-3">
                         <label for="vip_price" class="h4">VIP Price:</label>
                         <div class="d-flex align-items-center bg-light rounded">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="my-3 col-6 d-flex">
+                <div class="my-3 col-lg-6 col-12 d-flex">
                     <div class="col-6 pe-3">
                         <label for="svip_price" class="h4">SVIP Price:</label>
                         <div class="d-flex align-items-center bg-light rounded">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="my-3 col-6">
+                <div class="my-3 col-lg-6 col-12">
                     <button type="submit" class="btn btn-primary col-12">Upload Event</button>
                 </div>
             </form>

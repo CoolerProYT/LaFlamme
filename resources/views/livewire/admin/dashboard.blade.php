@@ -1,6 +1,6 @@
-<div>
+<div class="px-2">
     <div class="container my-4">
-        <div class="d-flex justify-content-between">
+        <div class="d-md-flex justify-content-between">
             <div class="dashboard-card p-3 rounded">
                 <div>
                     <b class="h3">Total Booking</b>
