@@ -9,3 +9,9 @@ $(document).ready(function(){
         resizeVideo()
     })
 })
+
+function backToTop(){
+    $('.landing-page-container').stop().animate({
+        scrollTop: 0
+    }, 1);
+}

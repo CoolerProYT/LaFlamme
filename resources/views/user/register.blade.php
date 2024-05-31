@@ -36,9 +36,14 @@
                 font-family: Inter, sans-serif;
             }
             input{
-                font-size: 40px;
+                font-size: 20px;
                 font-family: Inter, sans-serif;
                 padding: 10px;
+            }
+            @media only screen and (min-width: 998px) {
+                input{
+                    font-size: 40px;
+                }
             }
             button{
                 border: none;

@@ -32,4 +32,7 @@
         </div>
         @include('layout.footer')
     </div>
+    <div class="to-top-btn" onclick="backToTop()">
+        <span style="margin: 0;padding: 0">^</span>
+    </div>
 @endsection

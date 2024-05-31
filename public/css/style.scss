@@ -359,11 +359,33 @@ nav{
         padding-bottom: 5rem;
     }
 
-    img{
+    /*img{
         width: 100%;
         height: auto;
         object-fit: cover;
         display: block;
+    }*/
+}
+.gallery-column{
+    width: 33.333%;
+}
+.gallery-image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.01);
+    }
+
+    img{
+        object-fit: cover;
+        max-height: 160%;
+        max-width: 160%;
     }
 }
 .image-row{
@@ -372,6 +394,20 @@ nav{
 }
 .image-column{
     flex: 33.3333%;
+    width: 33%;
+
+    .item{
+        cursor: pointer;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+    }
 }
 .reserve{
     min-height: 45vh;
@@ -499,12 +535,16 @@ footer{
     }
 }
 .event-image-box{
-    width: 25%;
+    width: 35%;
     aspect-ratio: 8/12;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive(768px){
+        width: 25%;
+    }
 
     img{
         max-width: 100%;
@@ -528,12 +568,16 @@ footer{
     }
 }
 .event-book-image-box{
-    width: 15%;
+    width: 30%;
     aspect-ratio: 8/12;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive(768px){
+        width: 15%;
+    }
 
     img{
         max-width: 100%;
@@ -545,9 +589,15 @@ footer{
 }
 .select-table{
     td{
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
         aspect-ratio: 1/1;
+        word-break: break-all;
+
+        @include responsive(768px){
+            width: 75px;
+            height: 75px;
+        }
 
         label{
             width: 100%;
@@ -560,6 +610,14 @@ footer{
         }
     }
 }
+.table-img{
+    max-height: 100%;
+    max-width: 100%;
+
+    @include responsive(768px) {
+        max-height: 75px;
+    }
+}
 input[type=checkbox]{
     display: none;
 }
@@ -569,8 +627,13 @@ input[type=checkbox]{
 }
 .booking-card{
     background-color: #E4BD82;
-    width: 48%;
-    margin: 20px 1%;
+    width: 100%;
+    margin: 20px 0;
+
+    @include responsive(768px){
+        width: 48%;
+        margin: 20px 1%;
+    }
 }
 .booking-card-border{
     border-right: 15px solid black;
@@ -626,8 +689,16 @@ input[type=checkbox]{
     }
 }
 .menu-card{
-    width: 18%;
+    width: 48%;
     margin: 15px 1%;
+
+    @include responsive(768px){
+        width: 23%;
+    }
+
+    @include responsive(1024px){
+        width: 18%;
+    }
 }
 .menu-card-image-box{
     width: 100%;
@@ -640,5 +711,41 @@ input[type=checkbox]{
     img{
         max-width: 100%;
         max-height: 100%;
+    }
+}
+.to-top-btn{
+    z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+.pop-up-image{
+    height: 85vh;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.d-1440-block{
+    display: none;
+
+    @include responsive(1440px){
+        display: block;
+    }
+}
+.d-1440-none{
+    @include responsive(1440px){
+        display: none;
     }
 }

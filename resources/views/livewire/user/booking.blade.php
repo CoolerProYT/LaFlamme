@@ -1,7 +1,11 @@
 <div class="container my-5">
+    <a class="pointer h5" href="javascript:history.back()" style="text-decoration: none">
+        <img style="height: 30px" src="{{ asset('icon/left-arrow.svg') }}">
+        <span>back</span>
+    </a>
     @if($qrCode != '')
         <div class="pop-up justify-content-center align-items-center d-flex">
-            <div class="col-2 container pop-up-content p-3">
+            <div class="col-xxl-2 col-10 col-md-6 col-lg-4 container pop-up-content p-3">
                 <div class="d-flex justify-content-center bg-white p-4">
                     <img src="{{ $qrCode }}" class="col-12">
                 </div>
@@ -17,7 +21,7 @@
         </div>
     @endif
 
-    <div>
+    <div class="mt-3">
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link pointer {{ $flag == 'pending' ? 'bg-light text-dark' : 'text-light' }}" wire:click="updateFlag('pending')">Unused</a>

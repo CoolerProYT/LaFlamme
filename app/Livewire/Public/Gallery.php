@@ -10,9 +10,15 @@ class Gallery extends Component
     public $galleries;
     public $chunk;
 
+    public $image;
+
     public function mount(){
         $this->galleries = Home::where('section','gallery')->get();
         $this->chunk = ceil($this->galleries->count() / 3);
+    }
+
+    public function changeImage($image){
+        $this->image = $image;
     }
 
     public function render()

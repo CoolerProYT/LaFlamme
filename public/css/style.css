@@ -403,6 +403,12 @@ nav ul li a {
 .gallery {
   min-height: 50vh;
   padding-bottom: 5rem;
+  /*img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+  }*/
 }
 @media screen and (min-width: 768px) {
   .gallery {
@@ -410,11 +416,27 @@ nav ul li a {
     padding-bottom: 5rem;
   }
 }
-.gallery img {
+
+.gallery-column {
+  width: 33.333%;
+}
+
+.gallery-image {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-image:hover {
+  transform: scale(1.01);
+}
+.gallery-image img {
   object-fit: cover;
-  display: block;
+  max-height: 160%;
+  max-width: 160%;
 }
 
 .image-row {
@@ -424,6 +446,17 @@ nav ul li a {
 
 .image-column {
   flex: 33.3333%;
+  width: 33%;
+}
+.image-column .item {
+  cursor: pointer;
+  width: 100%;
+}
+.image-column .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .reserve {
@@ -559,12 +592,17 @@ footer {
 }
 
 .event-image-box {
-  width: 25%;
+  width: 35%;
   aspect-ratio: 8/12;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .event-image-box {
+    width: 25%;
+  }
 }
 .event-image-box img {
   max-width: 100%;
@@ -589,12 +627,17 @@ footer {
 }
 
 .event-book-image-box {
-  width: 15%;
+  width: 30%;
   aspect-ratio: 8/12;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .event-book-image-box {
+    width: 15%;
+  }
 }
 .event-book-image-box img {
   max-width: 100%;
@@ -606,9 +649,16 @@ footer {
 }
 
 .select-table td {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   aspect-ratio: 1/1;
+  word-break: break-all;
+}
+@media screen and (min-width: 768px) {
+  .select-table td {
+    width: 75px;
+    height: 75px;
+  }
 }
 .select-table td label {
   width: 100%;
@@ -618,6 +668,16 @@ footer {
   justify-content: center;
   cursor: pointer;
   user-select: none;
+}
+
+.table-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .table-img {
+    max-height: 75px;
+  }
 }
 
 input[type=checkbox] {
@@ -631,8 +691,14 @@ input[type=checkbox] {
 
 .booking-card {
   background-color: #E4BD82;
-  width: 48%;
-  margin: 20px 1%;
+  width: 100%;
+  margin: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .booking-card {
+    width: 48%;
+    margin: 20px 1%;
+  }
 }
 
 .booking-card-border {
@@ -698,8 +764,18 @@ input[type=checkbox] {
 }
 
 .menu-card {
-  width: 18%;
+  width: 48%;
   margin: 15px 1%;
+}
+@media screen and (min-width: 768px) {
+  .menu-card {
+    width: 23%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-card {
+    width: 18%;
+  }
 }
 
 .menu-card-image-box {
@@ -713,6 +789,47 @@ input[type=checkbox] {
 .menu-card-image-box img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.to-top-btn {
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+.pop-up-image {
+  height: 85vh;
+}
+.pop-up-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.d-1440-block {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .d-1440-block {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .d-1440-none {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

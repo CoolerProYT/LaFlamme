@@ -210,6 +210,7 @@ class EventBook extends Component
         ]);
 
         $total_price = 0;
+        $max_pax = 0;
 
         foreach($selectedSeats as $selectedSeat){
             switch($selectedSeat){
@@ -221,6 +222,7 @@ class EventBook extends Component
                 case 'SDJ7':
                 case 'SDJ8':
                     $total_price += $this->sdj_price;
+                    $max_pax += 10;
                     break;
                 case 'VIP1':
                 case 'VIP2':
@@ -237,6 +239,7 @@ class EventBook extends Component
                 case 'VIP16':
                 case 'VIP17':
                     $total_price += $this->vip_price;
+                    $max_pax += 8;
                     break;
                 case 'VVIP1':
                 case 'VVIP2':
@@ -245,6 +248,7 @@ class EventBook extends Component
                 case 'VVIP6':
                 case 'VVIP7':
                     $total_price += $this->vvip_price;
+                    $max_pax += 10;
                     break;
                 case 'SVIP1':
                 case 'SVIP2':
@@ -255,18 +259,25 @@ class EventBook extends Component
                 case 'SVIP8':
                 case 'SVIP9':
                     $total_price += $this->svip_price;
+                    $max_pax += 12;
                     break;
                 case 'SVVIP1':
                 case 'SVVIP2':
                     $total_price += $this->svvip_price;
+                    $max_pax += 15;
                     break;
                 case 'S1':
                 case 'S2':
                 case 'S3':
                 case 'S5':
                     $total_price += $this->s_price;
+                    $max_pax += 5;
                     break;
             }
+        }
+
+        if($this->pax > $max_pax){
+            return $this->addError('pax', 'The maximum pax for selected table is ' . $max_pax . '.');
         }
 
         do{
