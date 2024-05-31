@@ -41,7 +41,7 @@ nav{
     }
 }
 .logo img{
-    width: 200px;
+    width: 50px;
 }
 
 //Landing Page
@@ -746,6 +746,6 @@ input[type=checkbox]{
 }
 .d-1440-none{
     @include responsive(1440px){
-        display: none;
+        display: none !important;
     }
 }

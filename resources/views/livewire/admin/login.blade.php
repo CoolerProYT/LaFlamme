@@ -1,6 +1,6 @@
 <div class="container">
     <div class="col-12 text-center">
-        <img src="{{ asset('img/logo.png') }}" class="col-12">
+        <img src="{{ asset('img/logo.png') }}" class="col-2">
     </div>
     <div class="container col-md-8 col-12 mt-5">
         <form wire:submit.prevent="login">

@@ -4,7 +4,7 @@
         <span class="text-light">back</span>
     </a>
     <div class="col-12 text-center">
-        <img src="{{ asset('img/logo.png') }}" class="col-12">
+        <img src="{{ asset('img/logo.png') }}" class="col-2">
     </div>
     <div class="container col-lg-8 mt-5">
         <form wire:submit.prevent="login">
