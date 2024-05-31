@@ -2,7 +2,7 @@
     <div class="container d-md-flex flex-wrap col-12 pb-5">
 
         <div class="col-lg-3 col-md-6">
-            <img src="{{ asset('img/404-logo.png') }}" alt="">
+            <img src="{{ asset('img/logo.png') }}" class="col-4">
             <div>
                 <a class="nav-link text-light" href="{{ route('landing') }}#about">What's On</a>
                 <br>
