@@ -16,8 +16,10 @@ class Register extends Component
         $this->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:6',
+            'password' => 'required|min:8|regex:/^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/',
             'password_confirmation' => 'same:password'
+        ],[
+            'password.regex' => 'Password must contain at least one uppercase letter, one number, and one special character.'
         ]);
 
         $user = User::create([
