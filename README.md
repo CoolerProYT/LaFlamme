@@ -1,5 +1,4 @@
 # LaFlamme
-___
 
 ## Description
 This is a simple project for our Capstone Project.
