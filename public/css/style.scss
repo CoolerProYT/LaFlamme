@@ -169,7 +169,7 @@ nav{
         left: 2rem;
         width: 40%;
         height: 60%;
-        border: 1.5px solid rgba(251, 51, 51, 0.89);
+        border: 1.5px solid rgba(251, 51, 51, 0.3);
     }
 
     &::after{
@@ -177,7 +177,7 @@ nav{
         right: 0.5rem;
         width: 45%;
         height: 85%;
-        border: 1.5px solid rgba(251, 51, 51, 0.89);
+        border: 1.5px solid rgba(251, 51, 51, 0.3);
     }
 
     .third-box{
@@ -185,7 +185,7 @@ nav{
         left: 30%;
         width: 50%;
         height: 85%;
-        border: 1.5px solid rgba(251, 51, 51, 0.56);
+        border: 1.5px solid rgba(251, 51, 51, 0.3);
     }
 }
 .about-desc{
@@ -277,7 +277,7 @@ nav{
         min-height: calc(100vh - (70px));
     }
 
-    &::before,
+    /*&::before,
     &::after, {
         content: "";
         position: absolute;
@@ -313,7 +313,7 @@ nav{
         width: 60%;
         height: 30%;
         border: 1.5px solid rgba(251, 51, 51, 0.89);
-    }
+    }*/
 }
 .event-day{
     font-family: "Post No Bills Jaffna ExtraBold Regular";

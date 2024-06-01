@@ -203,21 +203,21 @@ nav ul li a {
   left: 2rem;
   width: 40%;
   height: 60%;
-  border: 1.5px solid rgba(251, 51, 51, 0.89);
+  border: 1.5px solid rgba(251, 51, 51, 0.3);
 }
 .about::after {
   top: 5%;
   right: 0.5rem;
   width: 45%;
   height: 85%;
-  border: 1.5px solid rgba(251, 51, 51, 0.89);
+  border: 1.5px solid rgba(251, 51, 51, 0.3);
 }
 .about .third-box {
   top: 10%;
   left: 30%;
   width: 50%;
   height: 85%;
-  border: 1.5px solid rgba(251, 51, 51, 0.56);
+  border: 1.5px solid rgba(251, 51, 51, 0.3);
 }
 
 .about-desc {
@@ -312,6 +312,43 @@ nav ul li a {
   min-height: 45vh;
   position: relative;
   z-index: 1;
+  /*&::before,
+  &::after, {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      z-index: 0;
+  }
+
+  &::before{
+      top: 30%;
+      left: 1rem;
+      width: 45%;
+      height: 65%;
+      border: 1.5px solid rgba(251, 51, 51, 0.89);
+
+      @include responsive(768px){
+          top: 20%;
+          left: 1.5rem;
+          width: 45%;
+          height: 75%;
+      }
+
+      @include responsive(1024px){
+          top: 20%;
+          left: 2rem;
+          width: 45%;
+          height: 75%;
+      }
+  }
+
+  &::after{
+      bottom: 10%;
+      right: 0.5rem;
+      width: 60%;
+      height: 30%;
+      border: 1.5px solid rgba(251, 51, 51, 0.89);
+  }*/
 }
 @media screen and (min-width: 768px) {
   .events {
@@ -322,42 +359,6 @@ nav ul li a {
   .events {
     min-height: calc(100vh - 70px);
   }
-}
-.events::before, .events::after {
-  content: "";
-  position: absolute;
-  box-sizing: border-box;
-  z-index: 0;
-}
-.events::before {
-  top: 30%;
-  left: 1rem;
-  width: 45%;
-  height: 65%;
-  border: 1.5px solid rgba(251, 51, 51, 0.89);
-}
-@media screen and (min-width: 768px) {
-  .events::before {
-    top: 20%;
-    left: 1.5rem;
-    width: 45%;
-    height: 75%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .events::before {
-    top: 20%;
-    left: 2rem;
-    width: 45%;
-    height: 75%;
-  }
-}
-.events::after {
-  bottom: 10%;
-  right: 0.5rem;
-  width: 60%;
-  height: 30%;
-  border: 1.5px solid rgba(251, 51, 51, 0.89);
 }
 
 .event-day {

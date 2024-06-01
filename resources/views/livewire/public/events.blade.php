@@ -2,7 +2,7 @@
     <div class="events">
         <div class="mt-5" style="z-index: 2;position: relative">
             <span class="post-no-bill header ms-4">Events</span>
-            <div class="col-8" style="border-bottom: 1.5px solid rgba(251, 51, 51, 0.56);"></div>
+            <div class="col-8" ></div><!--style="border-bottom: 1.5px solid rgba(251, 51, 51, 0.56);"-->
         </div>
         <div class="event-list d-flex justify-content-evenly" style="z-index: 2;position: relative">
             @foreach($events as $event)
