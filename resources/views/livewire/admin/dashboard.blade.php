@@ -27,34 +27,34 @@
             </div>
         </div>
     </div>
-    <div class="container my-5 bg-dark">
-        <div class="py-2 d-flex justify-content-between">
+    <div class="container my-5 bg-dark rounded">
+        <div class="py-3 d-flex justify-content-between">
             <span class="h3">10 Latest Booking</span>
-            <a href="" class="text-primary" style="text-decoration: none">View All</a>
+            <a href="{{ route('admin.booking') }}" class="btn btn-dark" style="background-color: #181818">View All</a>
         </div>
         <div class="table-responsive">
             <table class="table table-dark">
                 <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">User</th>
+                    <th scope="col">Name</th>
                     <th scope="col">Event</th>
                     <th scope="col">Date</th>
-                    <th scope="col">Status</th>
+                    <th class="text-center" scope="col">Status</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach ($bookings as $booking)
                     <tr>
-                        <th scope="row">{{ $booking->booking_id }}</th>
-                        <td>{{ $booking->user->name }}</td>
-                        <td>{{ $booking->event->name }}</td>
-                        <td>{{ $booking->event->date }}</td>
-                        <td>
+                        <th class="py-3" scope="row">{{ $booking->booking_id }}</th>
+                        <td class="py-3" style="white-space: nowrap">{{ $booking->name }}</td>
+                        <td class="py-3" style="white-space: nowrap">{{ $booking->event->name }}</td>
+                        <td class="py-3" style="white-space: nowrap">{{ $booking->event->date }}</td>
+                        <td class="py-3 text-center">
                             @if ($booking->status == 'pending')
-                                <span class="badge bg-warning text-dark">{{ $booking->status }}</span>
+                                <span class="badge bg-warning text-dark" style="font-size: 14px">{{ $booking->status }}</span>
                             @else
-                                <span class="badge bg-success">{{ $booking->status }}</span>
+                                <span class="badge bg-success" style="font-size: 14px">{{ $booking->status }}</span>
                             @endif
                         </td>
                     </tr>

@@ -1,4 +1,4 @@
-<div class="sticky-top col-12 px-md-4 px-2 py-2 d-flex justify-content-between border-bottom border-dark align-items-center" style="background-color: #030303">
+<div class="sticky-top col-12 px-md-4 px-2 py-3 d-flex justify-content-between border-bottom border-dark align-items-center" style="background-color: #030303">
     <div class="d-flex align-items-center">
         @switch(\Illuminate\Support\Facades\Route::currentRouteName())
             @case('admin.event.edit')

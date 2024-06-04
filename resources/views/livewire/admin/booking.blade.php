@@ -28,16 +28,16 @@
                 <tbody>
                 @foreach($bookings as $booking)
                     <tr>
-                        <td>{{ $booking->id }}</td>
-                        <td style="white-space: nowrap">{{ $booking->event->name }}</td>
-                        <td style="white-space: nowrap">{{ $booking->name }}</td>
-                        <td>{{ $booking->pax }}</td>
-                        <td>{{ $booking->table }}</td>
-                        <td>{{ $booking->total_payment }}</td>
+                        <td class="py-3" style="vertical-align: middle">{{ $booking->id }}</td>
+                        <td class="py-3" style="white-space: nowrap;vertical-align: middle">{{ $booking->event->name }}</td>
+                        <td class="py-3" style="white-space: nowrap;vertical-align: middle">{{ $booking->name }}</td>
+                        <td class="py-3" style="vertical-align: middle">{{ $booking->pax }}</td>
+                        <td class="py-3" style="vertical-align: middle">{{ $booking->table }}</td>
+                        <td class="py-3" style="vertical-align: middle">{{ $booking->total_payment }}</td>
                         @if($flag == 'pending')
-                            <th>
+                            <td class="py-3">
                                 <button class="btn btn-success" wire:click="completeBooking({{ $booking->id }})">Complete</button>
-                            </th>
+                            </td>
                         @endif
                     </tr>
                 @endforeach
