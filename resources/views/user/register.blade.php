@@ -19,37 +19,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
         <title>LaFlamme</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <style>
-            body{
-                background-color: #030303;
-                min-height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            label{
-                color: white;
-                font-size: 50px;
-                font-family: Inter, sans-serif;
-            }
-            input{
-                font-size: 20px;
-                font-family: Inter, sans-serif;
-                padding: 10px;
-            }
-            @media only screen and (min-width: 998px) {
-                input{
-                    font-size: 40px;
-                }
-            }
-            button{
-                border: none;
-                background-color: white;
-            }
-        </style>
         @livewireStyles
     </head>
     <body>
