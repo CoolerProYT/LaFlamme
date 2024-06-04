@@ -386,6 +386,8 @@ nav{
         object-fit: cover;
         max-height: 160%;
         max-width: 160%;
+        user-select: none;
+        -webkit-user-drag: none;
     }
 }
 .image-row{

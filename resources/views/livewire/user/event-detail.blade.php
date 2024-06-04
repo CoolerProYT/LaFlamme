@@ -63,7 +63,6 @@
         </div>
     </div>
     <div class="mt-5 d-1440-none d-none d-md-block">
-        <span class="text-danger">There is no table with number 4*</span>
         <table class="table table-dark bordered">
             <thead>
             <tr>

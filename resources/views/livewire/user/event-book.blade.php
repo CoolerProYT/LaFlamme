@@ -351,14 +351,14 @@
                 <div class="my-4 d-md-flex justify-content-center">
                     <div class="text-center">
                         <div>
-                            <label for="name">Name</label>
+                            <label for="name" style="font-size: 16px">Name</label>
                         </div>
                         <input id="name" type="text" wire:model.live="name" class="text-center">
                         @error('name') <div><span class="text-danger">{{ $message }}</span></div>  @enderror
                     </div>
                     <div class="ps-md-3 text-center">
                         <div>
-                            <label for="pax">Pax</label>
+                            <label for="pax" style="font-size: 16px">Pax</label>
                         </div>
                         <input id="pax" type="number" class="text-center" wire:model.live="pax" min="1">
                         @error('pax') <div><span class="text-danger">{{ $message }}</span></div>  @enderror

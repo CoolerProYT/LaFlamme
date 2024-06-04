@@ -50,9 +50,9 @@
                             <div><span class="h5 truncate"><b>Event Name: </b>{{ $event->name }}</span></div>
                             <div><b>Event Date: </b>{{ $event->date }}</div>
                             <div><b>Event Time: </b>{{ $event->start }} - {{ $event->end }}</div>
-                            <div><b>Table: </b>{{ $booking->table }}</div>
                             <div><b>Name: </b>{{ $booking->name }}</div>
                             <div><b>Pax: </b>{{ $booking->pax }}</div>
+                            <div><b>Table: </b>{{ $booking->table }}</div>
                             <div><b>Total Payment: </b>RM{{ $booking->total_payment }}</div>
                         </div>
                         <div class="pb-2 text-end">

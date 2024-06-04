@@ -16,11 +16,16 @@
                         <span class="h4"><b>Time: </b>{{ $event->start }} - {{ $event->end }}</span>
                     </div>
                 </div>
+            </div>
+            <div>
                 <div class="my-2">
-                    <span class="h4"><b>Selected Table:</b> {{ $booking->table }}</span>
+                    <span class="h4"><b>Name:</b> {{ $booking->name }}</span>
                 </div>
                 <div class="my-2">
                     <span class="h4"><b>Pax:</b> {{ $booking->pax }}</span>
+                </div>
+                <div class="my-2">
+                    <span class="h4"><b>Table:</b> {{ $booking->table }}</span>
                 </div>
                 <div class="my-2">
                     <span class="h4"><b>Deposit:</b> RM{{ $booking->total_payment }}</span>
