@@ -151,10 +151,13 @@ nav ul li a {
   font-style: normal;
   font-size: 20px;
   color: white;
+  /*@include responsive(1200px){
+      font-size: 60px;
+  }*/
 }
 @media screen and (min-width: 768px) {
   .shape-text {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -162,12 +165,7 @@ nav ul li a {
     font-size: 55px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .shape-text {
-    font-size: 60px;
-  }
-}
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px) {
   .shape-text {
     font-size: 80px;
   }
