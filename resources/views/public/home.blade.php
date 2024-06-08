@@ -10,10 +10,7 @@
         <div class="shape d-flex justify-content-center align-items-center">
             <div class="text-center">
                 <div>
-                    <span class="shape-text">Spark Club</span>
-                </div>
-                <div class="mt-3 mt-lg-4">
-                    <span class="shape-text">Enjoy</span>
+                    <span class="shape-text">LaFlamme</span>
                 </div>
                 <hr class="py-1 py-sm-2 py-xl-3">
                 <div>
