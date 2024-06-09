@@ -4,12 +4,12 @@
             <li class="logo"><a href="#home"><img src="{{ asset('img/logo.png') }}"></a></li>
         </ul>
         <ul class="d-none d-lg-flex">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contactus" style="white-space: nowrap">Contact Us</a></li>
-            <li><a href="#location">Location</a></li>
+            <li><a href="#home" style="font-weight: bold">Home</a></li>
+            <li><a href="#about" style="font-weight: bold">About</a></li>
+            <li><a href="#events" style="font-weight: bold">Events</a></li>
+            <li><a href="#gallery" style="font-weight: bold">Gallery</a></li>
+            <li><a href="#contactus" style="white-space: nowrap;font-weight: bold">Contact Us</a></li>
+            <li><a href="#location" style="font-weight: bold">Location</a></li>
             @if(\Illuminate\Support\Facades\Auth::guard('web')->check())
                 <div class="dropdown">
                     <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown">
