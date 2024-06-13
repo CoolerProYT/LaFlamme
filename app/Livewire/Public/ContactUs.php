@@ -26,8 +26,8 @@ class ContactUs extends Component
         $resend = Resend::client(env('RESEND_API_KEY'));
 
         $resend->emails->send([
-            'from' => 'Spark Contact Us <spark@jinitaimei.cloud>',
-            'to' => ['veronlam1818@gmail.com'],
+            'from' => 'LaFlamme Contact Us <LaFlamme@jinitaimei.cloud>',
+            'to' => ['J23040932@student.newinti.edu.my'],
             'subject' => $this->subject,
             'text' => $this->message,
             'reply_to' => "{$this->name} <{$this->email}>",

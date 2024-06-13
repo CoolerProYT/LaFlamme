@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -16,6 +17,12 @@ class EventController extends Controller
     }
 
     public function editEvent($id){
+        $event = Event::find($id);
+        if (!$event) {
+            return redirect()->route('admin.event');
+        }
+
+
         return view('admin.edit_event', ['id' => $id]);
     }
 }

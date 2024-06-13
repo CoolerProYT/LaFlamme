@@ -28,16 +28,16 @@
                 <span class="h3">Contact</span>
             </div>
             <div class="mt-3">
-                <a class="nav-link text-light">+6018-6680 404</a>
+                <a class="nav-link text-light">+6011-1052 8997</a>
                 <br>
-                <a class="nav-link text-light">info@404clubnotfound.com</a>
+                <a class="nav-link text-light">J23040932@student.newinti.edu.my</a>
             </div>
             <div class="mt-5">
                 <span class="h3">Payment Info</span>
             </div>
             <div class="mt-3">
-                <a class="nav-link text-light">Absolute Nexus sdn bhd</a>
-                <a class="nav-link text-light">5626xxxx7024</a>
+                <a class="nav-link text-light">LaFlamme sdn bhd</a>
+                <a class="nav-link text-light">562644737024</a>
                 <a class="nav-link text-light">Maybank</a>
             </div>
         </div>
@@ -68,9 +68,9 @@
                     <a class="nav-link text-light">10pm - 5am</a>
                 </div>
                 <div class="mt-5">
-                    <a class="nav-link text-light">E-1-01, Electric</a>
+                    <a class="nav-link text-light">123 Jalan Bukit Bintang,</a>
                     <br>
-                    <a class="nav-link text-light">Boulevard, Trec KL,</a>
+                    <a class="nav-link text-light">Bukit Bintang,</a>
                     <br>
                     <a class="nav-link text-light">Kuala Lumpur</a>
                 </div>
@@ -81,7 +81,7 @@
     <div>
         <div class="d-flex justify-content-center pb-4 border-top pt-3">
             <div class="text-light">
-                <span>© 2023 by 404 Club Not Found</span>
+                <span>© 2024 by LaFlamme</span>
             </div>
         </div>
     </div>

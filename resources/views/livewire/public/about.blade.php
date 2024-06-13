@@ -23,7 +23,7 @@
                 <div class="mt-3">
                     <pre class="post-no-bill whats-on-desc col-12 text-start" style="white-space: break-spaces;overflow-y: hidden">Welcome to an avant-garde experiment exploring the realms of space and atmosphere, shattering the barriers within entertainment and social circles.
 This is a space designed to evoke emotions within a vibrant PARTY atmosphere.
-Spark is dedicated to crafting an authentically relaxed and immersive entertainment experience, presenting the audience with the epitome of a delightful party. Here, possibilities extend beyond boundaries, making it a hub for diverse and customized entertainment scenes.</pre>
+LaFlamme is dedicated to crafting an authentically relaxed and immersive entertainment experience, presenting the audience with the epitome of a delightful party. Here, possibilities extend beyond boundaries, making it a hub for diverse and customized entertainment scenes.</pre>
                 </div>
 
                 <div class="text-center mt-5">
@@ -37,7 +37,7 @@ Spark is dedicated to crafting an authentically relaxed and immersive entertainm
     <div class="whats-on-continue d-flex align-items-center">
         <div class="col-1"></div>
         <div class="col-5 pe-3" style="z-index: 1">
-            <pre class="post-no-bill whats-on-desc col-12 text-start" style="white-space: break-spaces;overflow-y: hidden">Check out our latest posts on Instagram to stay up to date with what’s happening at Spark!</pre>
+            <pre class="post-no-bill whats-on-desc col-12 text-start" style="white-space: break-spaces;overflow-y: hidden">Check out our latest posts on Instagram to stay up to date with what’s happening at LaFlamme!</pre>
         </div>
         <div class="col-6">
             <img class="col-12" src="{{ asset('img/whats-on-2.png') }}">
