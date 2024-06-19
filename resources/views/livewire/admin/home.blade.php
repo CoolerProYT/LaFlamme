@@ -41,7 +41,7 @@
                     <div>
                         <textarea wire:model="about_content" class="col-6" style="min-height: 300px;max-height: 300px"></textarea>
                     </div>
-                    @error('about_content') <span class="text-danger">{{ $about_content }}</span> @enderror
+                    @error('about_content') <span class="text-danger">{{ $message }}</span> @enderror
                     <div class="mt-3">
                         <button type="submit" class="btn btn-primary">Upload</button>
                     </div>
