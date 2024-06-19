@@ -63,6 +63,7 @@ Route::prefix('/admin')->group(function(){
 
         Route::controller(AdminHomeController::class)->group(function(){
             Route::get('/home','home')->name('admin.home');
+            Route::get('/promotion','promotion')->name('admin.promotion');
         });
 
         Route::controller(AdminEventController::class)->group(function(){

@@ -1,6 +1,7 @@
 @extends('layout.master')
 
 @section('content')
+    @livewire('public.promotion')
     @include('layout.navbar')
     <div class="landing-page-container">
         <div id="home" class="landing-page-item">

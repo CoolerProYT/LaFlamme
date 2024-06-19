@@ -33,6 +33,9 @@
                 @case('admin.menu.edit')
                     Menu Management
                     @break
+                @case('admin.promotion')
+                    Promotion Management
+                    @break
             @endswitch
         </span>
     </div>
