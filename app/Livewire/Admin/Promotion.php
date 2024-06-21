@@ -54,6 +54,8 @@ class Promotion extends Component
         else{
             $this->isActive = boolval(Home::where(['section' => 'promotion', 'content-type' => 'is_active'])->first()->content);
         }
+
+        $this->new_desc = $this->description;
     }
 
     public function updateImageFlag($flag){
@@ -84,6 +86,7 @@ class Promotion extends Component
     }
 
     public function updateDesc(){
+        $this->new_desc = $this->new_desc == null ? '' : $this->new_desc;
         Home::where(['section' => 'promotion', 'content-type' => 'description'])->update(['content' => $this->new_desc]);
         $this->description = $this->new_desc;
         $this->edit_desc = false;
