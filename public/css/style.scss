@@ -751,3 +751,15 @@ input[type=checkbox]{
         display: none !important;
     }
 }
+.promotion{
+    position: relative;
+}
+.close-promotion{
+    z-index: 10;
+    position: absolute;
+}
+.outline{
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+}
