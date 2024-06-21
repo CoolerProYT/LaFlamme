@@ -9,11 +9,11 @@
             <img src="{{ asset('icon/home.svg') }}">
         </a>
     </div>
-    <div class="my-3">
+    {{--<div class="my-3">
         <a href="{{ route('admin.promotion') }}" data-bs-toggle="tooltip" data-bs-placement="right" title="Promotion Management">
             <img src="{{ asset('icon/promotion.svg') }}">
         </a>
-    </div>
+    </div>--}}
     <div class="my-3">
         <a href="{{ route('admin.event') }}" data-bs-toggle="tooltip" data-bs-placement="right" title="Event Management">
             <img src="{{ asset('icon/event.svg') }}">
