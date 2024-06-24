@@ -68,7 +68,6 @@
                     </table>
                 </div>
             </div>
-        <div>
             <div class="ms-md-3">
                 <div class="d-flex justify-content-center">
                     <div class="d-flex align-items-center">
