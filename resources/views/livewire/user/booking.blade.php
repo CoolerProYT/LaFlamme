@@ -1,5 +1,5 @@
 <div class="container my-5">
-    <a class="pointer h5" href="javascript:history.back()" style="text-decoration: none">
+    <a class="pointer h5" href="{{ route('landing') }}" style="text-decoration: none">
         <img style="height: 30px" src="{{ asset('icon/left-arrow.svg') }}">
         <span>back</span>
     </a>

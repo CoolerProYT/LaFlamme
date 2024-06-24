@@ -161,7 +161,7 @@
                         </tr>
                         <tr>
                             <td class="@if(!in_array('VIP13',$bookedSeats)) @if($vip13) bg-success @else bg-secondary @endif @else bg-danger @endif">
-                                <input type="checkbox" wire:model.live="vip13" value="vip13" id="vip13"> {{ in_array('VIP13',$bookedSeats) ? 'disabled' : '' }}
+                                <input type="checkbox" wire:model.live="vip13" value="vip13" id="vip13" {{ in_array('VIP13',$bookedSeats) ? 'disabled' : '' }}>
                                 <label for="vip13" data-bs-toggle="tooltip" title="RM{{ $event->vip_price }}, Max Pax: 8">VIP13</label>
                             </td>
                             <td></td>
