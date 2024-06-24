@@ -28,7 +28,47 @@
         <div>
             <span class="h1">Choose Your Table</span>
         </div>
-        <div class="container">
+        <div class="d-lg-flex">
+            <div>
+                <div class="mt-3">
+                    <span class="text-danger">Payment will be 50% of the price as deposit</span>
+                    <table class="table table-dark bordered">
+                        <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Price (RM)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>S1 - S5 (Standing)</td>
+                            <td>{{ $event->s_price }}</td>
+                        </tr>
+                        <tr>
+                            <td>SDJ1 - SDJ8 (Sofa)</td>
+                            <td>{{ $event->sdj_price }}</td>
+                        </tr>
+                        <tr>
+                            <td>VIP1 - VIP17 (Sofa)</td>
+                            <td>{{ $event->vip_price }}</td>
+                        </tr>
+                        <tr>
+                            <td>VVIP1 - VVIP7 (Sofa)</td>
+                            <td>{{ $event->vvip_price }}</td>
+                        </tr>
+                        <tr>
+                            <td>SVIP1 - SVIP9 (Sofa)</td>
+                            <td>{{ $event->svip_price }}</td>
+                        </tr>
+                        <tr>
+                            <td>SVVIP1 - SVVIP2 (Sofa)</td>
+                            <td>{{ $event->svvip_price }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <div>
             <div class="ms-md-3">
                 <div class="d-flex justify-content-center">
                     <div class="d-flex align-items-center">
