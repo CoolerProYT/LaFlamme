@@ -13,7 +13,7 @@ class BookingScan extends Component
 
     public function mount()
     {
-        $this->booking = Booking::find($this->id);
+        $this->booking = Booking::where('booking_id', $this->id)->first();
     }
 
     public function completeBooking(){
