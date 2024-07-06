@@ -16,7 +16,7 @@
                 <span class="text-light h3">Stay Connected</span>
                 <div class="mt-3 link-logo">
                     <img src="https://static.wixstatic.com/media/479266_e32f710a7ed1441ca8036184ce8f346e~mv2.png/v1/fill/w_20,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/479266_e32f710a7ed1441ca8036184ce8f346e~mv2.png">
-                    <img src="https://static.wixstatic.com/media/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png/v1/fill/w_20,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png">
+                    <a href="https://www.instagram.com/laflamme_iics?igsh=MThjN242N2ZyZzdscw==" target="_blank"><img src="https://static.wixstatic.com/media/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png/v1/fill/w_20,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png"></a>
                     <img src="https://static.wixstatic.com/media/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png/v1/fill/w_20,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png">
                     <img src="https://static.wixstatic.com/media/11062b_7edd292d29b34c309100535a26dc5033~mv2.png/v1/fill/w_20,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7edd292d29b34c309100535a26dc5033~mv2.png">
                 </div>
